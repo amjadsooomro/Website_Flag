@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amjad</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            overflow: hidden;
+            background-image: url('worldmap.jpg');
+            background-size: cover;
+        }
+
+        .flags {
+            display: none;
+            width: 50%;
+            height: 50vh;
+        }
+
+        .btn {
+            width: 120px;
+            height: 70px;
+            font-size: 28px;
+            border-radius: 20px;
+            outline: none;
+            border: 0px;
+        }
+
+        #b1 {
+            color: white;
+            background-color: green;
+        }
+
+        #b2 {
+            background-color: orange;
+            color: white;
+        }
+
+        #b3 {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="b1" class="btn" onclick="pakFlag()">Pakistan</button>
+    <button id="b2" class="btn" onclick="indiaFlag()">India</button>
+    <button id="b3" class="btn" onclick="chinaFlag()">China</button>
+    <div id="flag1">
+        <img src="pakistan flag.jpg" alt="" id="pakFlag" class="flags">
+    </div>
+    <div id="flag2">
+        <img src="india flag.jpg" alt="" id="indFlag" class="flags">
+    </div>
+    <div id="flag3">
+        <img src="china.jpg" alt="" id="chinaFlag" class="flags">
+    </div>
+</body>
+<script>
+    var flag1 = document.getElementById('pakFlag');
+    var flag2 = document.getElementById('indFlag');
+    var flag3 = document.getElementById('chinaFlag');
+
+
+    function pakFlag() {
+        if (flag1.style.display == 'none') {
+            flag1.style.display = "block";
+
+        }
+        else {
+            flag1.style.display = "none";
+
+        }
+    }
+    function indiaFlag() {
+        if (flag2.style.display == 'none') {
+            flag2.style.display = "block";
+        }
+        else {
+            flag2.style.display = "none";
+        }
+    }
+    function chinaFlag() {
+        if (flag3.style.display == 'none') {
+            flag3.style.display = "block";
+        }
+        else {
+            flag3.style.display = "none";
+        }
+    }
+
+</script>
+
+</html>
